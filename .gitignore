@@ -1,0 +1,4 @@
+*.pyc
+__pycache__
+dbase.db
+setenvvars.sh
