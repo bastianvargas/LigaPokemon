@@ -27,11 +27,11 @@ def trainers_func():
             return jsonify({"_id": db.crear_trainerr(request_body)})
 
     elif request.method == 'PUT':
-        # Actualizar nombre y descripcion de la carrera
+        # Actualizar nombre y descripcion de la league
         return jsonify({'modificados': db.actualizar_trainer(request_body)})
 
     elif request.method == 'DELETE' and trainer_id is not None:
-        # Borrar una carrera usando el _id
+        # Borrar una league usando el _id
         return jsonify({'borrados': db.borrar_trainer_por_id(trainer_id)})
 
     elif trainer_id is not None:
